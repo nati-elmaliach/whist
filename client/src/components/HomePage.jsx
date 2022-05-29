@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useProducts } from '../hooks/useProducts';
 import ProductCard from './Card';
 import Cart from './Cart';
-
+ 
 const HomePage = () => {
   const [products] = useProducts();
 
-  const [shoppingCart, setShoppingCart] = useState<any>([]);
+  const [shoppingCart, setShoppingCart] = useState([]);
 
   const handleBuyClick = (item) => {
     setShoppingCart([...shoppingCart, item]);
