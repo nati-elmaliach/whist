@@ -10,11 +10,11 @@ import { OrdersModule } from './orders/orders.module';
       type: "postgres",
       host: "db",
       port: 5432,
-      username: process.env.POSTGRES_USERNAME,
-      password: process.env.POSTGRES_PASSWORD,
+      username: "postgres",
+      password: "pass123",
       database: "postgres",
       autoLoadEntities: true,
-      synchronize: false
+      synchronize: true
 
     }), OrdersModule]
 })

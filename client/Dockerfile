@@ -18,5 +18,6 @@ RUN npm run build
 
 # Handle Nginx
 FROM nginx
+EXPOSE 80
 COPY --from=builder /frontend/build /usr/share/nginx/html
 COPY ./default.conf /etc/nginx/conf.d/default.conf
