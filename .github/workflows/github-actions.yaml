@@ -15,8 +15,8 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
 
       - name: Push to ecs
+        run: printenv &&  chmod +x deploy.sh && RUNNER_ALLOW_RUNASROOT="1"  sudo ./deploy.sh
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION  }}
-        run: printenv &&  chmod +x deploy.sh && RUNNER_ALLOW_RUNASROOT="1"  sudo ./deploy.sh
