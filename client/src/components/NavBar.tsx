@@ -9,7 +9,7 @@ const NavBar = () => {
       </div>
 
       <div>
-        <Link to='/home'>home</Link>
+        <Link to='/home'>home-CICD</Link>
       </div>
 
       <div>
