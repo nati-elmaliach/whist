@@ -5,9 +5,6 @@ add-apt-repository ppa:eugenesan/ppa
 apt-get update
 apt-get install jq -y
 
-curl https://raw.githubusercontent.com/silinternational/ecs-deploy/master/ecs-deploy | sudo tee -a /usr/bin/ecs-deploy
-sudo chmod +x /usr/bin/ecs-deploy
-
 # Login to AWS ECR
 aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 616132893387.dkr.ecr.eu-central-1.amazonaws.com
 
