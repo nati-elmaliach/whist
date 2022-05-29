@@ -13,7 +13,7 @@ const NavBar = () => {
       </div>
 
       <div>
-        <Link to='/stats'>stats</Link>
+        <Link to='/stats'>stats-CICD</Link>
       </div>
     </nav>
   );
