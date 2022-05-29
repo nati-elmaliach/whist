@@ -6,10 +6,6 @@ docker build -t client ./client
 docker tag client:latest 616132893387.dkr.ecr.eu-central-1.amazonaws.com/client:latest
 docker push 616132893387.dkr.ecr.eu-central-1.amazonaws.com/client:latest
 
-# Build Tag and Push posgres
-docker build -t db ./db
-docker tag db:latest 616132893387.dkr.ecr.eu-central-1.amazonaws.com/db:latest
-docker push 616132893387.dkr.ecr.eu-central-1.amazonaws.com/db:latest
 
 # Build Tag and Push server
 docker build -t server ./server
