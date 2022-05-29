@@ -1,11 +1,3 @@
-pip install --user awscli
-export PATH=$PATH:$HOME/.local/bin
-
-add-apt-repository ppa:eugenesan/ppa
-apt-get update
-apt-get install jq -y
-
-printenv
 # Login to AWS ECR
 docker login -u AWS -p $(aws ecr get-login-password --region eu-central-1) 616132893387.dkr.ecr.eu-central-1.amazonaws.com
 
