@@ -8,7 +8,7 @@ const HomePage = () => {
 
   const [shoppingCart, setShoppingCart] = useState<any>([]);
 
-  const handleBuyClick = (item: any) => {
+  const handleBuyClick = (item) => {
     setShoppingCart([...shoppingCart, item]);
   };
   return (
